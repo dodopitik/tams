@@ -1,0 +1,82 @@
+---
+import Container from "@/components/container.astro";
+import Postlist from "@/components/postlist.astro";
+import Layout from "@/layouts/Layout.astro";
+import miroso from "../assets/hero.png";
+
+
+import { latestPosts } from "@/utils/content";
+import { Image } from "astro:assets";
+// Use Astro.glob() to fetch all posts, and then sort them by date.
+// const posts = (await Astro.glob("./blog/*.{md,mdx}")).sort(
+//   (a, b) =>
+//     new Date(b.frontmatter.publishDate).valueOf() -
+//     new Date(a.frontmatter.publishDate).valueOf()
+// );
+// console.log(posts[0].frontmatter.image);
+
+---
+<style>
+  @keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 3s ease infinite;
+  width: max-content;
+}
+</style>
+<Layout title="">
+  <Container>
+    <main class=" h-[700px] mt-20 -mb-20 ">
+   <div class=" flex flex-col md:flex-row  justify-center items-center gap-10">
+    <div class=" transition-all duration-500 ease-in-out hover:scale-105 hover:rotate-1">
+      <h1 class="text-5xl mb-10  animate-bounce 
+     [animation-iteration-count:infinite] 
+     [animation-duration:2s] 
+     [animation-delay:1s]
+     [animation-fill-mode:forwards]
+     [animation-timing-function:ease-in-out]">welcome to my <br> playground </h1>
+    <h1 class="text-2xl transition-all duration-200 ease-in-out hover:scale-105 hover:rotate-5">
+      I'm Bagus Rizky | Network Engineer & Web Developer
+    </h1>
+
+<p>
+  Based in Yogyakarta, Indonesia, I craft digital solutions that connect and engage. My dual expertise in networking and web development allows me to approach problems from a unique perspective: ensuring robust connectivity while delivering exceptional user experiences.
+</p>
+
+<p>
+  What I Do:
+  <ul>
+    <li>
+ - Design and implement scalable network architectures
+    </li>
+    <li>
+      - Develop responsive, performance-optimized web applications
+    </li>
+   
+   
+  </ul>
+ 
+
+</p>
+<p>
+
+  I'm driven by the challenge of turning complex technical requirements into elegant, functional solutions. Every project is an opportunity to push boundaries and deliver value that matters.
+</p>
+<p>
+
+  Open to collaboration and exciting opportunities.
+</p>
+    
+    </div>
+       <Image src={miroso} height={450} width={450} alt="" class="flex justify-center transition-all duration-500 ease-in-out hover:scale-105 hover:rotate-1">
+   </div>
+    </main>
+  </Container>
+</Layout>

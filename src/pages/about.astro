@@ -1,0 +1,42 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Container from "@/components/container.astro";
+import { Image, getImage } from "astro:assets";
+import { authors } from "@/data/authors";
+import Pagetitle from "@/components/pagetitle.astro";
+import Link from "@/components/ui/link.astro";
+import heroku from "../assets/heroku.jpg"
+
+
+---
+
+<Layout title="About">
+  <Container>
+    <Pagetitle>
+      <Fragment slot="title">Me</Fragment>
+      <Fragment slot="desc">let me tell what i thinking</Fragment>
+    </Pagetitle>
+
+    <div class=" gap-10 mx-auto max-w-4xl mt-12 flex items-center justify-center">
+    <Image src={heroku} width={320} height={487} alt="" class={'object-cover transition-all duration-500 ease-in-out hover:scale-50 hover:rotate-1'}>
+    </div>
+
+    <div class="mx-auto max-w-xl text-center mt-14">
+      <p class="text-md">“Uncertainty is heavy, but it’s what shapes us into who we’re meant to be.”</p>
+      <p class="text-lg leading-relaxed text-gray-600 dark:text-gray-400 text-justify  mt-4">
+            Hello, I’m Braditams, a man still finding his direction in a world that keeps spinning faster.
+These days, I spend more time thinking about the future , a future that feels heavier with each passing day.
+But maybe that’s what growth is: learning to carry the weight without losing ourselves.
+      </p>
+      <p class="text-lg leading-relaxed text-gray-600 dark:text-gray-400 text-justify  mt-4">
+        Through this space, I want to remind myself ,and anyone reading this that even when life feels uncertain, we still have reasons to move forward.
+If tomorrow becomes harder, then let’s become stronger.
+      </p>
+      <p class="text-lg leading-relaxed text-gray-600 dark:text-gray-400 text-justify mt-4">This is not just a story about where I’m going,
+but about how I keep walking when I don’t know the way.</p>
+      <div class="mt-8">
+        <Link href="/contact" style="primary">Get in touch</Link>
+      </div>
+    </div>
+  </Container>
+</Layout>
