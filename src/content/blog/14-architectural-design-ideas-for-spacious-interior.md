@@ -1,5 +1,5 @@
 ---
-title: "braditams"
+title: "Smart Restaurant Ordering System"
 excerpt: "bagus rizky aditama developer website handal"
 publishDate: "2024-05-30T11:39:36.050Z"
 image: "../../assets/blog/happyliving.png"
@@ -23,32 +23,32 @@ Aplikasi ini menghadirkan solusi end-to-end untuk manajemen pemesanan restoran, 
    Pelanggan cukup scan QR code menggunakan smartphone untuk mengakses menu digital
 
 2. Browse & Order
-Menu digital interaktif langsung terbuka di browser pelanggan
-Pelanggan dapat melihat foto, deskripsi, harga, dan ketersediaan menu secara real-time
-Sistem keranjang belanja memudahkan pelanggan untuk menambah atau mengurangi pesanan
-Informasi meja otomatis terintegrasi dari QR code yang di-scan
+   Menu digital interaktif langsung terbuka di browser pelanggan
+   Pelanggan dapat melihat foto, deskripsi, harga, dan ketersediaan menu secara real-time
+   Sistem keranjang belanja memudahkan pelanggan untuk menambah atau mengurangi pesanan
+   Informasi meja otomatis terintegrasi dari QR code yang di-scan
 
 3. Payment Processing
-Setelah memilih menu, pelanggan langsung melakukan pembayaran melalui gateway Midtrans
-Mendukung berbagai metode pembayaran: kartu kredit/debit, e-wallet (GoPay, OVO, DANA), virtual account, dan lainnya
-Transaksi aman dan terenkripsi dengan standar PCI DSS
+   Setelah memilih menu, pelanggan langsung melakukan pembayaran melalui gateway Midtrans
+   Mendukung berbagai metode pembayaran: kartu kredit/debit, e-wallet (GoPay, OVO, DANA), virtual account, dan lainnya
+   Transaksi aman dan terenkripsi dengan standar PCI DSS
 
 4. Order Management (Kasir)
-Kasir menerima notifikasi real-time setiap ada pesanan baru
-Dashboard kasir menampilkan detail lengkap: nomor meja, item pesanan, total pembayaran, dan status
-Kasir dapat memantau status pembayaran dan memvalidasi pesanan
+   Kasir menerima notifikasi real-time setiap ada pesanan baru
+   Dashboard kasir menampilkan detail lengkap: nomor meja, item pesanan, total pembayaran, dan status
+   Kasir dapat memantau status pembayaran dan memvalidasi pesanan
 
 5. Kitchen Operations
-Setelah pembayaran terkonfirmasi, pesanan otomatis masuk ke sistem dapur
-Chef menerima notifikasi dengan detail pesanan yang jelas dan nomor meja
-Sistem menampilkan prioritas pesanan berdasarkan waktu dan dapat diatur secara manual
-Chef dapat mengupdate status pesanan (sedang diproses, siap antar)
+   Setelah pembayaran terkonfirmasi, pesanan otomatis masuk ke sistem dapur
+   Chef menerima notifikasi dengan detail pesanan yang jelas dan nomor meja
+   Sistem menampilkan prioritas pesanan berdasarkan waktu dan dapat diatur secara manual
+   Chef dapat mengupdate status pesanan (sedang diproses, siap antar)
 
 6. Service & Delivery
-Waiter menerima notifikasi ketika makanan sudah siap
-Sistem menampilkan nomor meja tujuan dengan jelas
-Waiter dapat mengkonfirmasi pengantaran makanan
-Status pesanan dapat dipantau oleh semua pihak secara real-time
+   Waiter menerima notifikasi ketika makanan sudah siap
+   Sistem menampilkan nomor meja tujuan dengan jelas
+   Waiter dapat mengkonfirmasi pengantaran makanan
+   Status pesanan dapat dipantau oleh semua pihak secara real-time
 
 ✨ Keunggulan & Manfaat
 Untuk Pelanggan:
@@ -89,5 +89,3 @@ Multi-user Dashboard: Interface berbeda untuk kasir, chef, dan waiter
 
 🚀 Saran Pengembangan Lebih Lanjut
 Berikut beberapa fitur yang bisa ditambahkan untuk meningkatkan nilai aplikasi:
-
-
